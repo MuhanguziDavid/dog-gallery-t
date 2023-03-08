@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import About from './pages/about/About';
 import DogsPage from './pages/dogs/Dogs';
+import Breed from './pages/breed/Breed';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
           <Routes>
             <Route path='/' element={<DogsPage />}/>
             <Route path='/about' element={<About />}/>
+            <Route path='/breed/:breed' element={<Breed />}/>
+            <Route path='/breed/:breed/:subBreed' element={<Breed />}/>
           </Routes>
         </div>
       </div>
