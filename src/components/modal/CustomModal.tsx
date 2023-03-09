@@ -6,7 +6,7 @@ type CustomModalProps = {
   handleClose: () => void
 }
 
-const CustomModal = ({ show, currentImage, handleClose }: CustomModalProps) => {
+const CustomModal: React.FC<CustomModalProps> = ({ show, currentImage, handleClose }) => {
   return (
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>

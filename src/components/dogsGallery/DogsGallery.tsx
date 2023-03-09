@@ -5,9 +5,9 @@ type DogsGalleryProps = {
   dogs: string[]
 }
 
-const DogsGallery = ({ dogs }: DogsGalleryProps) => {
-  const [show, setShow] = useState(false)
-  const [currentImage, setCurrentImage] = useState('')
+const DogsGallery: React.FC<DogsGalleryProps> = ({ dogs }) => {
+  const [show, setShow] = useState<boolean>(false)
+  const [currentImage, setCurrentImage] = useState<string>('')
 
   const handleShow = (dog: string) => {
     setShow(true)

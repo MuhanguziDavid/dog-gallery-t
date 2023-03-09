@@ -8,7 +8,7 @@ interface BreedListProps {
   }
 }
 
-const BreedList = ({ breedList }: BreedListProps) => {
+const BreedList: React.FC<BreedListProps> = ({ breedList }) => {
   const navigate = useNavigate()
 
   const handleClick = (breed: string, subBreed: string | null) => {
