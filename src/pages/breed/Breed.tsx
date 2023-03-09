@@ -3,7 +3,7 @@ import useFetch from "../../hooks/useFetch"
 import DogsGallery from '../../components/dogsGallery/DogsGallery'
 import BreedList from '../../components/breedList/BreedList'
 
-const Breed = () => {
+const Breed: React.FC<{}> = () => {
   const { breed, subBreed } = useParams();
   const { error, isLoading, data: dogs } = useFetch(
     subBreed 

@@ -2,7 +2,7 @@ import useFetch from "../../hooks/useFetch"
 import DogsGallery from '../../components/dogsGallery/DogsGallery'
 import BreedList from '../../components/breedList/BreedList'
 
-const DogsPage = () => {
+const DogsPage: React.FC<{}> = () => {
   const { error: galleryError, isLoading: isLoadingGallery, data: dogs } = useFetch('https://dog.ceo/api/breeds/image/random/20')
   const { error: breedListError, isLoading: isLoadingBreedList, data: breedList } = useFetch('https://dog.ceo/api/breeds/list/all')
 
