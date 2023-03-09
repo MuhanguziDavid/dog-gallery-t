@@ -2,6 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import userEvent from "@testing-library/user-event";
 import BreedList from '../BreedList';
+import { BreedListProps } from '../BreedList';
 
 const mockNavigate = jest.fn();
 jest.mock("react-router-dom", () => ({
@@ -17,7 +18,7 @@ const breedListMock = {
   ]
 }
 
-const MockBreedList = ({breedList}) => {
+const MockBreedList = ({breedList}: BreedListProps) => {
   return (
     <BrowserRouter>
       <BreedList breedList={breedList}/>

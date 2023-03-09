@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 
-interface BreedListProps {
+export interface BreedListProps {
   breedList: {
     [key: string]: string[]
   }
