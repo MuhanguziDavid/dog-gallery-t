@@ -2,6 +2,8 @@
 Is a fun web-app that shows a wolesome gallery of dog.
 It consumes the [Dog CEO API](https://dog.ceo/dog-api/documentation/)
 
+Deployed App - https://awesomeness.onrender.com
+
 ### Functionality:
 - View a gallery of amazing dogs
 - View a list of dog breeds
