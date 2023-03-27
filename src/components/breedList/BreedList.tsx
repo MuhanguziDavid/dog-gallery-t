@@ -8,6 +8,19 @@ export interface BreedListProps {
   }
 }
 
+// This is a bit of a mess, but it works :)
+// I'm sure there's a better way to do this.
+// Anyway, it gets a list of breeds and sub-breeds from the API and displays
+// them in a dropdown menu if there are sub-breeds, or just a link if there aren't.
+// 
+// Example of what the API returns:
+// breedlist = {
+//    "african": [],
+//    "bulldog": [
+//        "boston",
+//        "french"
+//    ],
+// }
 const BreedList: React.FC<BreedListProps> = ({ breedList }) => {
   const navigate = useNavigate()
 
